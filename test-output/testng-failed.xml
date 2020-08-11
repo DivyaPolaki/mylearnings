@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="testcases.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validate banner(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.tc_validatebanner">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="tc3_validateBanner"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testcases.tc_validatebanner -->
+    </classes>
+  </test> <!-- Validate banner(failed) -->
+</suite> <!-- Failed suite [Suite] -->
